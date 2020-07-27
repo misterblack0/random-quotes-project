@@ -1,0 +1,92 @@
+body {
+  min-height: 100vh;
+  font-family: "Montserrat";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00d2ff;
+  background: -webkit-linear-gradient(to left, #3a7bd5, #00d2ff);
+  background: linear-gradient(to left, #3a7bd5, #00d2ff);
+}
+
+.container {
+  height: 30rem;
+  width: 70rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  border-radius: 0.35rem;
+  margin-top: 3rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.container h1 {
+  text-align: center;
+  font-weight: 300;
+}
+
+.container {
+  position: relative;
+  -webkit-box-shadow: 0 5px 21px rgba(0, 0, 0, 0.3),
+    0 40px 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 5px 21px rgba(0, 0, 0, 0.3),
+    0 40px 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 5px 21px rgba(0, 0, 0, 0.3),
+    0 40px 40px rgba(0, 0, 0, 0.1) inset;
+}
+.container:before,
+.container:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+.container:after {
+  right: 0px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+.blockquotes {
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 3rem;
+}
+
+.blockquotes:before,
+.blockquotes:after {
+  position: absolute;
+  color: #fff;
+  font-size: 15rem;
+  line-height: 0;
+}
+
+.blockquotes:before {
+  content: "“";
+  top: 8rem;
+  left: 5rem;
+}
+
+.blockquotes:after {
+  content: "”";
+  bottom: 1rem;
+  right: 5rem;
+}
